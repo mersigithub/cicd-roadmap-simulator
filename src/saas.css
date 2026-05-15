@@ -1,0 +1,89 @@
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: Inter, system-ui;
+  background: #0b1220;
+  color: white;
+}
+
+/* LAYOUT */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* NAV ITEMS */
+.nav-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #cbd5e1;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.nav-item.active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* GLASS CARD */
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+.muted {
+  color: #94a3b8;
+}
+
+/* TERMINAL */
+.terminal {
+  background: #000;
+  color: #00ff88;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+/* CODE */
+.codeblock {
+  background: #111827;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}

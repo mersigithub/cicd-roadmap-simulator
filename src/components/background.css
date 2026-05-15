@@ -1,0 +1,30 @@
+
+.bg-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at top, #1e293b, #0b1220);
+  overflow: hidden;
+}
+
+.bg-flow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  gap: 40px;
+  opacity: 0.08;
+  animation: float 25s linear infinite;
+}
+
+.bg-node {
+  padding: 20px 30px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes float {
+  0% { transform: translateX(100%) translateY(-50%); }
+  100% { transform: translateX(-100%) translateY(-50%); }
+}
